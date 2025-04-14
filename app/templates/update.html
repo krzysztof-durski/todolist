@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Update{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    {% endblock %}
+  </head>
+  <body>
+    <h1>Update Task</h1>
+    <form action="" method="post">
+      <input type="text" name="title" value="{{ task.title }}" required />
+      <input type="text" name="description" value="{{ task.description }}" />
+      <label>
+        <input
+          type="checkbox"
+          name="completed"
+          {%
+          if
+          task.completed
+          %}checked{%
+          endif
+          %}
+        />
+        Completed
+      </label>
+      <button type="submit">Update Task</button>
+    </form>
+  </body>
+</html>
