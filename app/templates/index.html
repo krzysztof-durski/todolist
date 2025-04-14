@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% block head %}
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}To-Do List{% endblock %}</title>
+    <title>To-Do List</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/main.css') }}"
     />
-    {% endblock %}
   </head>
   <body>
     <h1>To-Do List</h1>
-    <form action="/create" method="post">
+    <form action="/add" method="POST">
       <input type="text" name="title" placeholder="Task Title" required />
       <input type="text" name="description" placeholder="Task Description" />
       <button type="submit">Add Task</button>
@@ -26,9 +23,20 @@
         task.completed %}
         <span>(Completed)</span>
         {% endif %}
-        <a href="/toggle/{{ task.id }}">Toggle Complete</a>
-        <a href="/update/{{ task.id }}">Edit</a>
-        <a href="/delete/{{ task.id }}">Delete</a>
+        <form
+          action="/update/{{ task.id }}"
+          method="POST"
+          style="display: inline"
+        >
+          <button type="submit">Toggle Complete</button>
+        </form>
+        <form
+          action="/delete/{{ task.id }}"
+          method="POST"
+          style="display: inline"
+        >
+          <button type="submit">Delete</button>
+        </form>
       </li>
       {% endfor %}
     </ul>
