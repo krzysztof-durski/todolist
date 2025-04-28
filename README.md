@@ -23,7 +23,7 @@ It is a simple TO-DO APP, lightweight web-based task management application. It 
   - HTML5 and CSS3 for basic UI.
   - Jinja2 templating engine for dynamic content rendering.
 - Database:
-  - SQLite
+  - PostgreSQL
 - Environment Management:
   - python-dotenv: For loading environment variables.
 - ChatGPT for creating README file.
