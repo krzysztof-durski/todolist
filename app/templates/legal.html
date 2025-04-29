@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>legal</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+  </head>
+  <body>
+    <h1 id="title">legal</h1>
+    <section class="box">
+      <h2>Is it legal?</h2>
+
+      <p>We don't know because:</p>
+      <ul>
+        <li>we don't care</li>
+        <li>we didn't check</li>
+        <li>YOLO</li>
+      </ul>
+      <p>Sue us ❤️</p>
+    </section>
+    <footer class="bottom-fixed">
+      <a href="{{ url_for('index') }}">
+        <button>main page</button>
+      </a>
+    </footer>
+    <div style="height: 60px"></div>
+  </body>
+</html>

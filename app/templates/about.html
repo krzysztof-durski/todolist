@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>about us</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+  </head>
+  <body>
+    <h1 id="title">about us</h1>
+
+    <section class="box">
+      <h2>What is ThePainBinBlog?</h2>
+
+      <p>
+        It is a safe space for people to just post what they struggle with right
+        now. They can share their pain without being judged.
+      </p>
+      <ul>
+        <li>No likes</li>
+        <li>No comments</li>
+        <li>No share button</li>
+      </ul>
+      <p>Just a place to throw pain away.</p>
+    </section>
+
+    <section class="box">
+      <h2>Who are 'us' you ask?</h2>
+
+      <h3>Why would you care?</h3>
+      <br />
+      <h4>If you need someone to talk to you can call:</h4>
+      <ul>
+        <li>your mom</li>
+        <li>your friend</li>
+        <li>(TBA hotlines in different countries)</li>
+      </ul>
+      <p>You are important <3</p>
+    </section>
+
+    <section class="box">
+      <h2>Contact us</h2>
+
+      <h3>if you need, ok...</h3>
+      <br />
+    </section>
+
+    <footer class="bottom-fixed">
+      <a href="{{ url_for('index') }}">
+        <button style="width: 150px">main page</button></a
+      >
+    </footer>
+    <div style="height: 60px"></div>
+  </body>
+</html>
