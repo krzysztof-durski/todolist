@@ -12,7 +12,7 @@ services:
       - key: FLASK_ENV
         value: production
 
-  - type: postgresql
+  - type: pgsql
     name: todo-list-db
     ipAllowList: []
     plan: free
