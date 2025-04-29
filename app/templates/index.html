@@ -41,16 +41,12 @@
       {% endfor %}
     </ul>
     <footer class="bottom-fixed">
-      <a href="about.html">
-        <button>about us</button>
+      <a href="{{ url_for('about') }}">
+        <button>About Us</button>
       </a>
 
-      <a href="legal.html">
-        <button>legal</button>
-      </a>
-
-      <a href="cats.html">
-        <button>funny cats</button>
+      <a href="{{ url_for('legal') }}">
+        <button>Legal</button>
       </a>
     </footer>
   </body>

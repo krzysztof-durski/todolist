@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - To-Do List</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>About Us</h1>
+      <div class="content">
+        <p>
+          Welcome to our To-Do List application! We are dedicated to helping you
+          stay organized and productive.
+        </p>
+        <p>
+          Our mission is to provide a simple, intuitive, and efficient way to
+          manage your daily tasks and responsibilities.
+        </p>
+        <p>Features:</p>
+        <ul>
+          <li>Easy task creation and management</li>
+          <li>Task completion tracking</li>
+          <li>Simple and clean interface</li>
+          <li>Free to use</li>
+        </ul>
+      </div>
+      <footer class="bottom-fixed">
+        <a href="{{ url_for('index') }}">
+          <button>Home</button>
+        </a>
+        <a href="{{ url_for('legal') }}">
+          <button>Legal</button>
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

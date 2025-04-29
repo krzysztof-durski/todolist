@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal - To-Do List</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Legal Information</h1>
+      <div class="content">
+        <h2>Terms of Service</h2>
+        <p>
+          By using this To-Do List application, you agree to these terms of
+          service. We're not responsible if you become too productive and your
+          boss gives you more work. That's on you!
+        </p>
+
+        <h2>Privacy Policy</h2>
+        <p>
+          We take your privacy seriously... mostly. Your tasks are stored
+          securely in our super-secret database guarded by a very sleepy cat. We
+          promise not to share your to-do lists with anyone, unless they offer
+          us cookies.
+        </p>
+
+        <h2>Disclaimer</h2>
+        <p>
+          This application is provided "as is" without any warranties, expressed
+          or implied. If it breaks, we'll fix it... eventually. No refunds, but
+          we'll send you a virtual high-five!
+        </p>
+
+        <h2>Copyright</h2>
+        <p>© 2024 To-Do List. All rights reserved. Even the wrong ones.</p>
+
+        <h2>Liability</h2>
+        <p>
+          We are not responsible for any missed deadlines, forgotten birthdays,
+          or that thing you were supposed to do yesterday. That's what the app
+          is for - to remind you so we don't have to!
+        </p>
+      </div>
+      <footer class="bottom-fixed">
+        <a href="{{ url_for('index') }}">
+          <button>Home</button>
+        </a>
+        <a href="{{ url_for('about') }}">
+          <button>About</button>
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
